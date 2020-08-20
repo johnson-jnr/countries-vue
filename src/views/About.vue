@@ -1,7 +1,8 @@
 <template>
   <div class="about">
-    <p>Muster Excercise, Country List using the Public Rest Country API</p>
-    <p>Url:</p>
+    <p>Muster Excercise: Displaying list of countries using the public rest Countries API</p>
+    <p>Also deployed on Netlify</p>
+    <a href="https://hellocountries.netlify.app" add target="_blank">Url Link</a>
   </div>
 </template>
 
@@ -9,7 +10,9 @@
 </script>
 <style scoped>
 .about {
-  padding-top: 30px;
+  padding: 30px;
   background-color: whitesmoke;
+
+  font-size: 20px;
 }
 </style>

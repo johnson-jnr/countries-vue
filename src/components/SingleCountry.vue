@@ -34,6 +34,7 @@
 
             <p>Demonym: {{country.demonym}}</p>
             <p v-if="country.area">Area: {{country.area}}</p>
+            <p v-if="country.gini">Gini: {{country.gini}}</p>
             <p v-if="country.borders.length > 0">Borders: {{country.borders[0]}}</p>
 
             <div>
@@ -91,7 +92,7 @@ export default {
 
   created() {
     this.$axios
-      .get(`https://restcountries.eu/rest/v2/name/${this.name}`)
+      .get(`https://restcountries.eu/rest/v2/name/${this.name}?fullText=true`)
       .then((response) => (this.countries = response.data));
   },
 };
