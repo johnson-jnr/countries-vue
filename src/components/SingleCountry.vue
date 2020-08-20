@@ -106,13 +106,13 @@ export default {
   padding-bottom: 2%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .detail-container {
     display: flex;
   }
 
   .img-container {
-    margin-right: 5%;
+    margin-right: 6%;
   }
 
   img {
